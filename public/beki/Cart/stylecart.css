@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background-color: #0F2547;
+    
+}
+@media (max-width: 768px) {
+    body {
+      background-color: white; /* Adjust the color for smaller screens if needed */
+    }
+}   
+section{
+    padding: 50px 10%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+.logo span {
+    font-weight: normal;
+}
+.navbar-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 4px 20px;
+}
+.navbar a{
+    color: black;
+    
+}
+.navbar li {
+    margin-right: 20px;
+    font-size: 20px;
+    margin-top:14px ;
+}
+.bx-menu {
+    display: none;
+}
+  
+@media (max-width: 768px) {
+    .logo {
+      font-size: 20px;
+      }
+    .navbar-wrapper {
+      justify-content: space-between;
+      }
+    .navbar {
+      flex-direction: column;
+      align-items:center;
+      }
+    .navbar li {
+      margin-right: -30px;
+      margin-bottom: -13px;
+      font-size: 20px; 
+      }
+     .navbar li a {
+      display: block;
+    }
+}
+.navbar li a.cart i,
+.navbar li a.account i {
+    position: relative;
+    font-size: 28px;
+    left: 0px;
+}
+
+@media (min-width: 1025px) {
+.h-custom {
+height: 100vh !important;
+}
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+top: 13px;
+}
+
+.bg-grey {
+background-color: #eae8e8;
+}
+
+@media (min-width: 992px) {
+.card-registration-2 .bg-grey {
+border-top-right-radius: 16px;
+border-bottom-right-radius: 16px;
+}
+}
+
+@media (max-width: 991px) {
+.card-registration-2 .bg-grey {
+border-bottom-left-radius: 16px;
+border-bottom-right-radius: 16px;
+}
+}
+  .icon-large {
+    font-size: 22px; /* Adjust the font size as per your preference */
+  }

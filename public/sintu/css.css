@@ -1,0 +1,613 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  background-color: #0F2547;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none; /* Added to remove underline */
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none; /* Added to remove underline */
+}
+
+.navbar li {
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none; /* Added to remove underline */
+}
+
+.bx-menu {
+    display: none;
+}
+
+/* Media query for smaller screen sizes */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar-wrapper {
+        justify-content: space-between;
+    }
+
+    .navbar {
+        flex-direction: column;
+       
+    }
+
+    .navbar li {
+        margin-right: -30px;
+        margin-bottom: -13px;
+        font-size: 20px;
+        text-decoration: none; /* Added to remove underline */
+    }
+
+    .navbar li a {
+        display: block;
+        text-decoration: none; /* Added to remove underline */
+    }
+}
+
+.navbar li a.cart i,
+.navbar li a.account i {
+    position: relative;
+    font-size: 28px;
+    left: 0px;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Style when hovering over dropdown links */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  height: 450px;
+  overflow-y: scroll;
+  margin-top: 120px;
+  margin-left: 11%;
+  width: 230px;
+}
+.category-heading {
+  position: relative;
+  font-weight: bold;
+  font-size: 22px;
+  bottom: -10px;
+  
+}
+.line0{
+  margin-top: -18px;
+}
+
+.furniture-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.furniture-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.furniture-list a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.furniture-list a:hover {
+  background-color: #ddd;
+ text-decoration: underline;
+}
+
+.furniture-list i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.furniture-list span {
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 5% auto;
+    padding: 5%;
+    margin-top: 200px;
+  }
+}
+.container2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 950px;
+  margin-left: 27%;
+  margin-top: -450px;
+  height: 450px;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+@media (max-width: 768px) {
+  .container2 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+}
+
+.latest-product {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+  position: absolute; /* Set the position to absolute */
+  top: 20px; /* Adjust the top position as needed */
+  left: 330px; /* Adjust the left position as needed */
+  transform: translateX(-100%); /* Move the text to the left */
+}
+
+@media (max-width: 768px) {
+  .latest-product {
+    font-size: 24px;
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.card {
+  position: relative;
+  width: calc(20% - 20px);
+  background-color: #e8e8e8;
+  height: 260px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-right: 10px; /* Adjust the margin as needed */
+  margin-top: 150px;
+
+}
+.card a{
+  color: #000;
+  text-decoration: none;
+ 
+}
+
+.sofa{
+  height: 100px;
+  margin-top: 29px;
+  width: 170px;
+  margin-left: -0px ;
+}
+.tvstand{
+  height: 100px;
+  margin-top:39px;
+  width: 180px;
+  margin-left: -3px;
+}
+.chair{
+  height: 130px;
+  margin-top: 25px;
+  width:150px ;
+  margin-left: 15px;
+
+}
+.lamp1{
+  height: 100px;
+  margin-top: 40px;
+  width: 150px;
+  margin-left: 35px;
+}
+.bed{
+  height: 140px;
+  margin-top: 20px;
+  width: 160px;
+  margin-left: -1px;
+}
+.tch{
+  height: 120px;
+  margin-top: 20px;
+  width: 150px;
+  margin-left: -0px;
+
+}
+
+
+
+
+.card-content {
+  text-align: center;
+}
+
+.card-content h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .container2 {
+    width: 90%;
+    margin: 5% auto;
+    padding: 5%;
+    margin-top: 200px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: auto;
+    margin: 5% auto;
+    padding: 5%;
+    margin-top: 10px;
+  }
+}
+.allproducts {
+  color: white;
+  margin-top: 30px;
+  margin-left: 180px;
+  font-size: 30px;
+}
+
+.line {
+  color: #888; /* Change the color of the line */
+  height: 2px; /* Set the height of the line */
+  width: 1180px; /* Set the width of the line to 100% of the container */
+  border: none; /* Remove default border */
+  background-color: #888; /* Set the background color of the line */
+}
+
+@media (max-width: 768px) {
+  .allproducts {
+    margin-left: 20px; /* Adjust the left margin for smaller screens */
+    font-size: 24px; /* Adjust the font size for smaller screens */
+  }
+  
+  .line {
+    width: 90%; /* Adjust the width of the line for smaller screens */
+  }
+}
+
+.container3sofa {
+  background-color: white;
+  padding: 20px;
+  width: 100%; /* Adjusted width to be responsive */
+  max-width: 1195px; /* Added max-width to limit container size */
+  margin-left: 11%;
+  margin-top: 50px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+
+}
+
+.card3 {
+  width: calc(20% - 20px); /* Adjusted width to fit 5 cards in a row */
+  background-color: #e8e8e8;
+  height: 290px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  margin-top: 40px;
+  display: inline-block;
+
+}
+
+.card3-image {
+  margin: 20%;
+  width: 100px;
+  height: 100px;
+ 
+}
+
+.card3-description {
+  flex: 1;
+}
+
+.card3-description h4 {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.card3-description p {
+  margin-left: 10px;
+  margin-top: 3px;
+  font-size: 14px;
+}
+.card3-description a i{
+  font-size: 25px;
+  color: black;
+  margin-left: 70%;
+  margin-top: 3px;
+}
+@media (max-width: 768px) {
+  .container3sofa {
+    width: auto; /* Adjusted width to be auto for smaller screens */
+    margin-left: 20px; /* Adjust the left margin for smaller screens */
+    margin-top: 20px; /* Adjust the top margin for smaller screens */
+    padding: 10px; /* Adjust the padding for smaller screens */
+  }
+  
+  .card3 {
+    width: calc(50% - 20px); /* Adjusted width to fit 2 cards in a row for smaller screens */
+    margin-right: 20px; /* Added right margin to create spacing between cards */
+    margin-top: 20px; /* Adjust the top margin for smaller screens */
+  }
+}
+
+.Couch {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .Couch {
+    font-size: 20px; /* Adjusted font-size for smaller screens */
+    margin-top: -1560px; /* Adjusted top margin for smaller screens */
+    margin-left: 10px; /* Adjusted left margin for smaller screens */
+  }
+}
+
+.line2 {
+  width: 1180px;
+  margin-top: 60px;
+  margin-left: 180px;
+}
+
+@media (max-width: 768px) {
+  .line2 {
+    width: 100%; /* Adjusted width to be responsive */
+    margin-top: 40px; /* Adjusted top margin for smaller screens */
+    margin-left: 20px; /* Adjusted left margin for smaller screens */
+  }
+}
+
+#products .pagination {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#products .pagination ul {
+  text-align: center;
+  width: 100%;
+}
+
+#products .pagination ul li {
+  display: inline;
+  margin: 0px 5px;
+}
+
+#products .pagination ul li a {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #2a2a2a;
+  display: inline-block;
+  text-align: center;
+  line-height: 44px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0F2547;
+}
+
+#products .pagination ul li a:hover,
+#products .pagination ul li.active a {
+  background-color: #0F2547;
+  color: #fff;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+  .container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 450px;
+    overflow-y: scroll;
+    margin-top: 120px;
+    margin-left: 5%;
+    width: 130px;
+  }
+  .category-heading {
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    bottom: -10px;
+  }
+  .container2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 50%;
+    margin-left: 45%;
+    margin-top: -450px;
+    height: 450px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  
+  
+  .latest-product {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+    top: 20px; /* Adjust the top position as needed */
+    left: 100px; /* Adjust the left position as needed */
+    transform: translateX(-100%); /* Move the text to the left */
+  }
+  
+  
+  .card {
+    position: sticky;
+    width: 100px;
+    background-color: #e8e8e8;
+    height: 100px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; /* Adjust the margin as needed */
+    margin-top: 150px;
+  }
+  .card:hover{
+    background-color: #333;
+  }
+  .sofa{
+    height: 50px;
+    margin-top: 29px;
+    width: 90px;
+    margin-left: -0px ;
+  }
+  .allproducts {
+    color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 30px;
+  }
+
+  .container3sofa {
+    background-color: white;
+    display: block;
+    padding: 20px;
+    width: 80%; /* Added max-width to limit container size */
+    margin-left: 11%;
+    margin-top: 50px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+  
+  }
+  
+  .card3 {
+    width: 45%; /* Adjusted width to fit 5 cards in a row */
+    background-color: #e8e8e8;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+    margin-top: 40px;
+    display: inline-block;
+    position: sticky;
+  }
+  
+  .card3-image {
+    margin: 20%;
+    width: 70px;
+    height: 70px;
+    position: sticky;
+  }
+  
+  .card3-description {
+    flex: 1;
+    position: sticky;
+  }
+  
+  .card3-description h4 {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .card3-description p {
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 14px;
+  }
+  .card3-description a i{
+    font-size: 25px;
+    color: black;
+    margin-left: 70%;
+    margin-top: 3px;
+  }
+  
+  
+  .Couch {
+    font-size: 30px;
+  }
+  
+}

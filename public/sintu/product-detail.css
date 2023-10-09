@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.message{
+    text-align: center;
+    color: green;
+}
+body{
+    background-color: #0F2547;
+}
+.container{
+    background: #ffffff;
+    margin: 65px 110px;
+    width: 85%;
+    height:75% ;
+    border-radius: 30px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+.box{
+    padding: 100px 50px ;
+    margin: 50px;
+    
+}
+img{
+    max-width: 400px;
+    min-height: 400px;
+    max-height: 500px ;
+    padding: 100px 30px;
+    float: left;
+}
+h1{
+    font-size: 30px;
+    line-height: 50px;
+    margin: 10px 0;
+}
+.btn{
+    display: inline-block;
+    background: #0F2547;
+    color:#fff;
+    padding: 48px 40px;
+    margin: 30px;
+    border-radius: 20px;
+    transition:  0.5;
+}
+
+.text h4{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.text input{
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #0F2547;
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+}
+@media only screen and (max-width: 800px ){
+    .container{
+       
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 90%;
+        height:80%;
+    }
+    .box{
+        padding: 30px  ;
+        margin: 20px;
+    }
+    img{
+        max-width: 300px;
+        padding: 50px ;
+        float: left;
+    }
+    h1{
+        font-size: 15px;
+        line-height: 25px;
+        margin: 12px 0;
+    }
+    .btn{
+        display: inline-block;
+        background: #0F2547;
+        color:#fff;
+        padding: 4px 15px;
+        margin: 15px;
+        border-radius: 20px;
+        transition:  o.5;
+    }
+    
+    .text h4{
+        margin: 20px 0;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .text input{
+        width: 100px;
+        height: 20px;
+        padding: 10px;
+        font-size: 20px;
+        margin-right: 10px;
+        border: 1px solid #0F2547;
+    }
+}
