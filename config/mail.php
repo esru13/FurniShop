@@ -98,9 +98,23 @@ return [
     |
     */
 
+    'stream'=>[
+        'ssl'=>[
+            'allow_self_signed'=>true,
+            'verify_peer'=>false,
+            'verify_peer_name'=>false,
+        ],
+    ],
+
+
+
+
+
+
+
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'extranaf33@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'FurniShop'),
     ],
 
     /*

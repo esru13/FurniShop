@@ -36,6 +36,9 @@
       <input class="form-check-input" type="checkbox" name="remember" id="remember">
       <label class="form-check-label" for="remember">{{ __('Remember me') }}</label>
         </div>
+        <div class="link">
+                <a href="{{url ('forgot-password') }}"> forget-password</a>
+        </div>
         <div class="field btn">
           <div class="btn-layer"></div>
           <input type="submit" value="{{ __('Log in') }}">
@@ -43,6 +46,7 @@
         <div class="link">
                 <p>Don't have an account <a href="{{url('register') }}"> Register</a></p>
         </div>
+        
       </form>
     </div>
   </div>
