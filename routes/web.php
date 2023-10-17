@@ -86,5 +86,7 @@ route::get('/delete_cart/{id}',[HomeController::class,'delete_cart']);
 
 //order
 route::get('/cash_order',[HomeController::class,'cash_order']);
+
+//teamir work's
 route::get('/delete_order/{id}',[HomeController::class,'delete_order']);
 route::get('/show_order',[HomeController::class,'show_order']);
