@@ -133,7 +133,7 @@ class HomeController extends Controller
             $data=cart::where('user_id','=',$userid)->get();
             
             if ($data->isEmpty()) {
-                return redirect()->back()->with('message', 'Cart is empty. Please add product to cart first.');
+                return redirect()->back()->with('message', 'Cart is empty. Please add product to cart first!');
             }
 
             foreach($data as $data)
@@ -182,7 +182,8 @@ class HomeController extends Controller
             $order = Order::where('user_id','=',$id)->get();
             return view('home.order',compact('order'));
            }
-              else{
+           
+           else{
                 return redirect('login');
               }
 

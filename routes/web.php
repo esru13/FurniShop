@@ -90,3 +90,12 @@ route::get('/cash_order',[HomeController::class,'cash_order']);
 //teamir work's
 route::get('/delete_order/{id}',[HomeController::class,'delete_order']);
 route::get('/show_order',[HomeController::class,'show_order']);
+
+// chapa
+
+// The route that the button calls to initialize payment
+
+Route::post('pay', 'App\Http\Controllers\ChapaController@initialize')->name('pay');
+
+// The callback url after a payment
+Route::get('callback/{reference}', 'App\Http\Controllers\ChapaController@callback')->name('callback');
