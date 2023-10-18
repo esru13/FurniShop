@@ -42,7 +42,6 @@
 </section>
 
 
-    
 <div class="section py-8 max-w-6xl mx-auto rounded-full" style="height: 250px; margin-top: -130px; opacity: 0.8; background-color: #0F2547; box-shadow: 0px 3px 6px #000000;">
     <div class="grid grid-cols-4 gap-2 ml-20 mt-4">
       <div class="col flex items-center fade-in-sm">

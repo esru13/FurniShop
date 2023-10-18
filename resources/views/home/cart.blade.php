@@ -138,8 +138,13 @@
                           <h5>ETB {{$total_amount}}</h5>
                         </div>
                         <a href="{{url('cash_order')}}" > <button type="button" class="btn btn-dark btn-block btn-lg"
-                          data-mdb-ripple-color="dark">Cash Order</button></a>
-                       
+                          data-mdb-ripple-color="dark">Cash Order</button></a><br></br>
+
+                          <form method="POST" action="{{route('pay')}}" id="paymentForm">
+                            @csrf
+                              <input type="hidden" value="{{$total_amount}}" name="chapa" >
+                              <input type="submit" class="btn btn-dark btn-block btn-lg" value="chapa" />
+                          </form>
       
                       </div>
                     </div>
