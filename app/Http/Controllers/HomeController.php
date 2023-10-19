@@ -165,21 +165,13 @@ class HomeController extends Controller
             $order = order::where('user_id','=',$userid)->get();
             return view('home.order',compact('order'));
         }
-        public function delete_order($id){
-
-            $order = Order::find($id);
-
-            $order -> delete();
-
-            return redirect()->back()->with('message', 'Order Cancelled Successfully.');
-        }
         public function show_order(){
 
            if(Auth::id())
            {
 
-            $id = Auth::user()->id;
-            $order = Order::where('user_id','=',$id)->get();
+            $data = Auth::user()->id;
+            $order = Order::where('user_id','=',$data)->get();
             return view('home.order',compact('order'));
            }
            
@@ -188,5 +180,17 @@ class HomeController extends Controller
               }
 
         }
+        public function delete_order($id){
+
+            $order = Order::find($id);
+
+            $order->delivery_status = "Cancelled Order";
+
+            $order->save();
+
+            return redirect()->back()->with('message', 'Order Cancelled Successfully.');
+        }
+        
     }
 
+    

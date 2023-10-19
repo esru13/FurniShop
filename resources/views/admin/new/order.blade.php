@@ -112,7 +112,7 @@
                      
                         @if($order->delivery_status=='processing')
                         <td><a class="edit" href="{{url('delivered',$order->id)}}"
-                        onclick="return confirm('Are You Sure this Product is Delivered!')">Delivered</a>
+                        onclick="return confirm('Are You Sure this Product is Delivered!')">Action</a></td>
                         @else
                         <td>Delivered</td>
 

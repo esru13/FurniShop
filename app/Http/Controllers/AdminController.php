@@ -151,12 +151,20 @@ class AdminController extends Controller
     }
     public function delivered($id)
     {
-        $order=Order::find($id);
+        $order = Order::find($id);
+    
+        if ($order->delivery_status == "Cancelled Order") {
+            $order->delivery_status = "Cancelled";
 
-        $order->delivery_status="delivered";
-
+        } 
+        elseif ($order->delivery_status == "processing") {
+            $order->delivery_status = "Delivered";
+        }
+       
+    
+    
         $order->save();
-
+    
         return redirect()->back();
     }
 }
