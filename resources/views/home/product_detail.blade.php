@@ -13,7 +13,7 @@
 
         <link rel="stylesheet" href="{{asset('beki/Landing/stylehomee.css')}}">
         
-          </head>
+        </head>
 
     <body >
 

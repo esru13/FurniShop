@@ -52,7 +52,7 @@ class ChapaController extends Controller
                 "description" => 'test'
             ]
         ];
-        
+        //   dd($data);
             
         
         $payment = Chapa::initializePayment($data);
@@ -67,14 +67,12 @@ class ChapaController extends Controller
         
     }
 
-    /**
-     * Obtain Rave callback information
-     * @return void
-     */
+ 
     public function callback($reference)
     {
+      
         $data = Chapa::verifyTransaction($reference);
-        //  dd($data);
+        // dd($data);
         //if payment is successful
         if ($data['status'] ==  'success') {
             $user = Auth::user();
@@ -95,6 +93,8 @@ class ChapaController extends Controller
                 $order->pro_id=$test->pro_id;
                 $order->payment_status='payment with chapa';
                 $order->delivery_status='paid';
+
+                //  dd($test);
                 $order->save();
 
                 $cartid=$test->id;
@@ -102,7 +102,7 @@ class ChapaController extends Controller
                 $cart->delete();
             }
    
-        //  dd($data);
+            
              $order = order::where('user_id','=',$userid)->get();
              return view('home.order',compact('order'));
         }
