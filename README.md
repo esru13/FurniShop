@@ -1,4 +1,5 @@
-![Uploading image.png…]()
+![home](https://github.com/esru13/FurniShop/assets/111453895/d7cd185e-5435-41c2-9eb7-bc8aeac86a6e)
+
 
 
 
