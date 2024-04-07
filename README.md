@@ -7,7 +7,7 @@ Furnishop is an e-commerce platform dedicated to providing customers with a deli
 
 **Getting Started with FurniShop**
 ![cart](https://github.com/esru13/FurniShop/assets/111453895/af773801-fd26-4827-9f84-83ae451293a9)
-**Papyment with Chapa https://chapa.co**
+**Payment Integrated with Chapa https://chapa.co**
 ![chapa](https://github.com/esru13/FurniShop/assets/111453895/ca9c340e-783d-43cb-848c-315b908e8f3c)
 
 **Prerequisites**
