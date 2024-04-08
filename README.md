@@ -1,5 +1,5 @@
 **FurniShop**
-Furnishop is an e-commerce platform dedicated to providing customers with a delightful shopping experience for furniture and home decor items. With its extensive range of products, intuitive features, and commitment to customer satisfaction, Furnishop aims to transform the way people furnish their living spaces.
+is an e-commerce platform dedicated to providing customers with a delightful shopping experience for furniture and home decor items. With its extensive range of products, intuitive features, and commitment to customer satisfaction, Furnishop aims to transform the way people furnish their living spaces.
 
 **ScreenShots**
 ![home](https://github.com/esru13/FurniShop/assets/111453895/507a34ac-a059-4af9-a25f-0d0988c36f2d)
