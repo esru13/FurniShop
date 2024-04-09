@@ -76,8 +76,10 @@ Running the Application
 To start the development server, run the following command:
 
     php artisan serve
-
-You can now access the application in your web browser at http://localhost:8000.
 ##
 **Admin Panel**
 ![admin side](https://github.com/esru13/FurniShop/assets/111453895/7f3bb9af-1a6a-42b6-925d-1a7f0f101b9c)
+
+You can now access the application in your web browser at http://localhost:8000.
+##
+
